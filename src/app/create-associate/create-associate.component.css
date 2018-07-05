@@ -1,0 +1,348 @@
+.button-space {
+    margin: 0px 12px 4px 0px;
+}
+/*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+}
+
+.main{
+ 	margin:50px 15px;
+}
+
+h1.title { 
+	font-size: 50px;
+	font-family: 'Passion One', cursive; 
+	font-weight: 400; 
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 2px;
+    margin-left: -375px;
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+.form-control {
+    height: auto!important;
+    width: 20%;
+
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	padding: 10px 40px;
+	 text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#listResults .checkbox * {
+  cursor: pointer;
+}
+#listResults .checkbox {
+  padding-left: 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+}
+
+#listResults .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
+}
+
+#listResults .checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+#listResults .checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  margin-left: -21px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+
+#listResults .checkbox input[type="checkbox"]{
+  opacity: 0;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+
+#listResults .checkbox input[type="checkbox"]:checked + label::after{
+  font-family: "FontAwesome";
+  content: "✔";
+}
+
+#listResults .checkbox.checkbox-square label::before {
+  border-radius: 50%;
+}
+
+#listResults .checkbox.checkbox-inline {
+  margin-top: 0;
+}
+
+#listResults .checkbox-red    input[type="checkbox"]:checked + label::after,
+#listResults .checkbox-yellow input[type="checkbox"]:checked + label::after,
+#listResults .checkbox-green  input[type="checkbox"]:checked + label::after,
+#listResults .checkbox-blue   input[type="checkbox"]:checked + label::after,
+#listResults .checkbox-black  input[type="checkbox"]:checked + label::after
+{color: #fff;}
+
+#listResults .checkbox-red input[type="checkbox"] + label::before
+{background-color: #990000;  border-color: #990000;}
+
+#listResults .checkbox-yellow input[type="checkbox"] + label::before
+{background-color: #face00;  border-color: #face00;}
+
+#listResults .checkbox-green input[type="checkbox"] + label::before
+{background-color: #008000;  border-color: #008000;}
+
+#listResults .checkbox-blue input[type="checkbox"] + label::before
+{background-color: #428bca;  border-color: #428bca;}
+
+#listResults .checkbox-black input[type="checkbox"] + label::before
+{background-color: #000000;  border-color: #000000;}
+
+
+
+
+
+
+
+input[type="checkbox"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+.img-ul {
+    --active-color: #3C9;
+    --common-radius: 3px;
+    background-color: #f8f8f8;
+    border-radius: var(--common-radius);
+    border: #d0d0d0 dashed 1px;
+    font-family: sans-serif;
+    position: relative;
+    color: #9b9b9b;
+    width: 12%;
+    }
+
+/*.customClass {
+    background-color: #dd3;
+    border-radius: 5px;
+    margin:5px;
+    width: 500px;
+}*/
+
+/*.customClass .img-ul-upload .img-ul-button{
+    background-color: #000 !important;
+    color: #502424;
+}
+*/
+.column {
+   
+    width: 50%;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+}
+
+/*.img-ul-button[_ngcontent-c2] {
+    -moz-box-shadow: 2px 2px 4px 0 rgba(148, 148, 148, 0.6);
+    -webkit-box-shadow: 2px 2px 4px 0 rgba(148, 148, 148, 0.6);
+    border: none;
+    box-shadow: 2px 2px 4px 0 rgba(148, 148, 148, 0.6);
+    color: #502424;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 10px;
+    text-transform: uppercase;
+}*/
+
+.customClass {
+    background-color: #dd3;
+    border-radius: 5px;
+    margin:5px;
+    width: 500px;
+}
+
+.customClass .img-ul-upload {
+    background-color: #000 !important;
+}
+
+.customClass .img-ul-clear {
+    background-color: #B819BB !important;
+}
+
+.customClass .img-ul-drag-box-msg {
+    color: purple !important;
+}
+
+.customClass .img-ul-container {
+    background-color: #FF6CAD !important;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+    background-color: #dac5c5;
+    color: white;
+}
+
+.row{
+        padding-top: 50px;
+}
+
+.colour{
+color:#713232;
+}

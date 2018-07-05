@@ -6,23 +6,23 @@ var WorkoutApp = angular.module('RoutingApp', ['ngRoute']);
 WorkoutApp.config(function($routeProvider) {  
   $routeProvider  
 
-  // route for the View All page    
-      .when('/workout', {  
-      templateUrl: './workout/workout.component.html',  
-      controller: 'mainController'  
-  })  
-
+  /
   // route for the create workout page    
-  .when('/create-workout', {  
-      templateUrl: './create-workout/create-workout.component.html',  
+  .when('/create-associate', {  
+      templateUrl: './create-associate/create-associate.component.html',  
       controller: 'CreateWorkoutController'  
   })  
 
+
+.when('/skill', {  
+      templateUrl: './skills/skills.component.html',  
+      controller: 'SkillsController'  
+  })  
   // route for the category page    
-  .when('/category', {  
-      templateUrl: './category/category.component.html',  
-      controller: 'categoryController'  
-  });  
+  .when('/home', {  
+      templateUrl: './home/home.component.html',  
+      controller: 'mainController'  
+  })
 
 });  
 
@@ -36,6 +36,3 @@ WorkoutApp.controller('CreateWorkoutController', function($scope) {
   $scope.AboutMessage = 'Create Workout Controller Called !!!';  
 });  
 
-WorkoutApp.controller('categoryController', function($scope) {  
-  $scope.ContactMessage = 'Category Controller Called !!!';  
-});  

@@ -4,43 +4,34 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { WorkoutComponent } from './workout/workout.component';
-import { CreateWorkoutComponent } from './create-workout/create-workout.component';
-import { CategoryComponent } from './category/category.component';
-import { TrackComponent } from './track/track.component';
+import { CreateAssociateComponent } from './create-associate/create-associate.component';
 import { HomeComponent } from './home/home.component';
-import { CreateWorkoutService } from './create-workout/create-workout.service';
-import { WorkoutService } from './workout/workout.service';
-import { CategoryService } from './category/category.service';
-import { CategoryFilterPipe } from './categoryfilter.pipe';
-import { WorkoutFilterPipe } from './workoutfilter.pipe';
-import { StartworkoutComponent } from './startworkout/startworkout.component';
-import { StartWorkoutService } from './startworkout/startworkout.service';
-import { TrackService } from './track/track.service';
+import { ImageUploadModule } from "angular2-image-upload";
+import { CreateAssociateService } from './create-associate/create-associate.service';
+import { HomeService } from './home/home.service';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Data } from "./model/data.model";
+import { SkillsService } from './skills/skills.service';
+import { SkillsComponent } from './skills/skills.component';
 import { ChartsModule } from 'ng2-charts';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'workout', component: WorkoutComponent },
-  { path: 'create-workout', component: CreateWorkoutComponent },
-  { path: 'category', component: CategoryComponent },
-  { path: 'track', component: TrackComponent },
-  { path: 'workout-tracker', component: StartworkoutComponent}
+  { path: 'create-associate', component: CreateAssociateComponent },
+  { path: 'home', component: HomeComponent },
+ { path: 'skill', component: SkillsComponent }
+ 
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    WorkoutComponent,
-    CreateWorkoutComponent,
-    CategoryComponent,
-    TrackComponent,
-    HomeComponent,
-    CategoryFilterPipe,
-    WorkoutFilterPipe,
-    StartworkoutComponent
+   CreateAssociateComponent,
+   SkillsComponent,
+    HomeComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -51,14 +42,17 @@ const appRoutes: Routes = [
     JsonpModule,
     FormsModule,
     ReactiveFormsModule,
-    ChartsModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    ChartsModule,
+    ImageUploadModule.forRoot()
+   
   ],
-  providers: [
-    CreateWorkoutService,
-    WorkoutService,
-    CategoryService,
-    StartWorkoutService,
-    TrackService
+   providers: [
+   SkillsService,
+    CreateAssociateService,
+    HomeService,
+    Data
   ],
   bootstrap: [AppComponent]
 })
