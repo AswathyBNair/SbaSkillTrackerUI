@@ -280,11 +280,12 @@ deleteEmployee(associateId: string){
       .subscribe(
          result => {
                     alert(result);
+                    this.employees = result;
                     this.navigateAway(result);
                 },
                 error => console.log(<any>error)
       );
-this.homeService.viewallAssociates()  
+/*this.homeService.viewallAssociates()  
       .subscribe(
           employees =>{
            this.employees = employees;
@@ -295,7 +296,7 @@ this.homeService.viewallAssociates()
            
           },
           error => this.errorMessage = error
-      );
+      );*/
 
         this.router.navigate(['/', 'home']);
             
@@ -303,7 +304,7 @@ this.homeService.viewallAssociates()
 
 navigateAway(data) {
         if (data.status === 200) {
-            this.router.navigate(['/', 'create-associate']);
+            this.router.navigate(['/', 'home']);
         }
     }
 

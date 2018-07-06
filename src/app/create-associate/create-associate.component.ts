@@ -205,6 +205,12 @@ navigateAway(data) {
             this.router.navigate(['/', 'home']);
         }
     }
+
+    navigateAwayAfter(data){
+
+            this.router.navigate(['/', 'home']);
+        
+    }
  showImage(event: any) {
         if (event.target.files && event.target.files[0]) {
             var reader = new FileReader();
@@ -245,13 +251,13 @@ delEmployee(associateId: string){
       .subscribe(
          result => {
                     alert(result);
-                    this.navigateAway(result);
+                    this.navigateAwayAfter(result);
                 },
                 error => console.log(<any>error)
       );
 
 
-        this.router.navigate(['/', 'home']);
+       
             
  }
 
